@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+body {
+    background-color: #eee;
+}
+
+header {
+    color: white;
+    background-color: #3868d6;
+    padding: 16px 0;
+    margin-bottom: 50px;
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+
+}
+
+
+
+nav {
+    display: flex;
+    font-size: 1.3em;
+}
+
+nav p {
+    margin-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+article {
+    display: flex;
+
+}
+
+.destaque article img {
+    width: 500px;
+}
+
+.sobre p {
+    font-weight: normal;
+
+}
+
+.sobre {
+    margin-left: 50px;
+}
+
+.destaque h2 {
+    border-bottom: 2.5px solid #3868d6;
+    padding: 16px;
+    margin-bottom: 24px;
+    color: #3868d6;
+    font-style: italic;
+}
+
+
+.destaque {
+    margin-bottom: 100px;
+}
+
+
+
+.produtos article img {
+    width: 300px;
+}
+
+.produto article {
+    display: grid;
+    grid-template-columns: repeat(4, 23.75%);
+    
+}
+
+.produtos h2 {
+    color: #3868d6;
+    border-bottom: 3px solid #3868d6;
+    padding-bottom: 16px;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.produto {
+    display: grid;
+    grid-template-columns: repeat(4, 23.75%);
+}
+
+.produto article {
+    display: block;
+}
+
+.produtos img {
+    max-width: 95%;
+    height: 250px;
+    margin-bottom: 25px;
+}
+
+.produto p {
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.produto h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: 900;
+}
+
+.produto button {
+    background-color: #043190;
+    padding: 7px;
+    font-size: large;
+    width: 95%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    .destaque article {
+        display: block;
+
+
+    }
+
+    .sobre {
+        margin: 0;
+    }
+
+    .container {
+
+
+        max-width: 90%;
+    }
+
+    .produto{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        
+    }
+
+
+
+    .produto article{
+        padding: 5px;
+        column-gap: 2%;
+    }
+
+    .produto button, .produto p{
+        width: 70%;
+    }
+
+.produto{
+    max-width: 70%;
+}
+
+.produtos h2{
+    max-width: 70%;
+}
+}
+
+@media screen and (max-width: 640px) {
+
+    
+    .destaque article {
+        display: block;
+
+
+    }
+
+    .sobre {
+        margin: 0;
+    }
+
+    .container {
+
+
+        max-width: 90%;
+    }
+
+    .produto{
+        display: block;
+        
+    }
+
+
+
+    .produto article{
+        padding: 5px;
+        margin-bottom: 16px;
+    }
+
+    .produto button, .produto p{
+        width: 70%;
+    }
+
+.produto{
+    max-width: 70%;
+}
+
+.produtos h2{
+    max-width: 70%;
+}
+
+header a{
+    font-size: 0.9em;
+}
+    
+}
